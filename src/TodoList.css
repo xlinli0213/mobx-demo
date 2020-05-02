@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 60px 0;
+  background: #deebf7;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #7f7f7f;
+}
+
+.todos {
+  padding: 30px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.addTodo-input {
+  padding: 10px;
+}
+
+.addTodo-button {
+  padding: 12px 20px;
+  margin-left: 20px;
+  color: #ffffff;
+  background: #56a9ff;
+  border: none;
+  cursor: pointer;
+}
+
+.addTodo-button:hover {
+  background: #b3d8ff;
+}
+
+.filter {
+  display: flex;
+  margin: 20px -30px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+
+.filter-label {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter-label.active {
+  color: #56a9ff;
+}
+
+.todoList-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e1e2e8;
+}
+
+.todoList-checkbox {
+  display: none;
+}
+
+.todoList-checkbox + label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 2px solid #e1e2e8;
+  border-radius: 2px;
+}
+
+.todoList-checkbox:checked + label {
+  border: 2px solid #56a9ff;
+}
+
+.todoList-checkbox:checked + label::before {
+  display: block;
+  content: '\2714';
+  text-align: center;
+  font-size: 0.14rem;
+  color: #56a9ff;
+}
+
+.todoList-text {
+  padding: 10px;
+  border: none;
+}
+
+.todoList-close {
+  font-size: 30px;
+  border: none;
+  background: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
